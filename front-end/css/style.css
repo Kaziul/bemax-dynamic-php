@@ -1,0 +1,874 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: 'Lato', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+
+
+/* ######################## Utility Class ########################  */
+
+.main{
+    width: 100%;
+    background-color: #fff;
+}
+
+.col-8{
+    width: 66.66%;
+    float: left;
+    /* padding: 0 15px; */
+
+}
+.col-6{
+    width: 50%;
+    float: left;
+    /* padding: 0 15px; */
+
+}
+.col-4{
+    width: 33.33%;
+    float: left;
+    /* padding: 0 15px; */
+}
+.col-3{
+    width: 25%;
+    float: left;
+    /* padding: 0 15px; */
+}
+.col-12{
+    width: 100%;
+    float: left;
+    /* padding: 0 15px; */
+}
+.pt-80{
+padding-top: 80px;    
+}
+.pb-80{
+padding-bottom: 80px;    
+}
+.pt-70{
+    padding-top: 70px;
+}
+.pb-70{
+    padding-bottom: 70px;
+}
+.pt-30{
+    padding-top: 70px;
+}
+.pb-30{
+    padding-bottom: 70px;
+}
+
+.pt-50{
+    padding-top: 70px;
+}
+.pb-50{
+    padding-bottom: 70px;
+}
+.pb-95{
+    padding-bottom: 90px;
+}
+
+.pbh-30{
+    padding-bottom: 30px;
+}
+.pbh-55{
+    padding-bottom: 55px;
+}
+
+/* .black-bg{
+    background: #222;
+} */
+.bemaxHeader{
+    padding-top: 70px;
+}
+.bemaxHeader h1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #333333;
+}
+.underline{
+    width: 39px;
+    height: 2px;
+    background: #adadad;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+/* ######################## Header Design ########################  */
+.container{
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.wraper{
+    width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0%;
+    line-height: 2.5;
+    z-index: 1000;
+    transition: all .35s;
+    border-top: 5px solid #4272d7;
+    display: flex;
+    padding-top: 38px;
+    padding-bottom: 43px;
+    background: #ffffff;
+    align-items: center;
+}
+.menuItem ul li {
+    display:inline-block;
+    padding-left: 30px;
+    list-style: none;
+}
+.menuItem ul li a{
+
+    text-decoration: none;
+    font-size: 15px;
+    color: #666666;
+}
+.menuItem ul li a:hover{
+    color: #007bff;
+}
+
+
+.header-cont {
+	display: flex;
+	justify-content: space-between;
+}
+.logo{
+    /* float: left; */
+    /* width: 600px;  */
+    color: #ffff;
+}
+.topbar-divider {
+
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* ##################### header fix ################### */
+
+.headerFix{
+    /* margin-bottom: 114px; */
+}
+
+
+/* ################################ Slider Show Design ################################## */
+
+
+.single-slide{
+    margin-top: 114px;
+    background-position: center ;
+    background-size: cover;
+    padding: 182px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.single-slide h4{ 
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: 2.5px;
+}
+.single-slide h2{ 
+    color: #fff;
+    font-size: 72px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.single-slide a{ 
+
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: 20px 40px;
+    background: #4272d7;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 2px;
+
+}
+.owl-nav{
+    overflow: hidden;
+}
+
+ .slider-active .owl-nav  button.owl-prev  {
+    background: rgba(0,0,0,.5);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    line-height: 40px;
+    text-align: center;
+    z-index: 999;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+    border-radius: 3px;
+
+
+}
+
+.slider-active .owl-nav  button.owl-next {
+    background: rgba(0,0,0,.5);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    line-height: 40px;
+    text-align: center;
+    z-index: 999;
+    color: #fff;
+    font-weight: 800;
+    font-size: 25px;
+    border-radius: 3px;
+   
+}
+/* .owl-nav div.owl-nav{left: 0;right: auto;} */
+/* .owl-nav button.owl-next{right: 0;left: auto;} */
+
+.slider-active .owl-dot span{
+    background: #bdbdbd;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+}
+.slider-active .owl-dots {
+    text-align: center;
+    margin-top: -11.9px;
+    z-index: 99;
+    position: relative;
+    bottom: 40px;
+}
+.slider-active .owl-dot.active span{
+    background: rgba(21,85,222,.89);
+}
+
+/* ################################ Heir Us Design ################################## */
+
+
+.heirUsBox{
+    padding: 24px  0;
+    background: #4272d7;
+    color: #ffffff;
+    font-weight: 700; 
+}
+
+.heirUsTxt p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 3.2;
+}
+.heirUsTxt p span{
+    font-size: 30px;
+}
+.cta-button{
+text-align: right;
+}
+.cta-button a{
+    border: 2px solid #fff;
+    color:#fff;
+    display: inline-block;
+    font-weight: 700px;
+    padding: 19px 43px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+/*  ################################### Icon Box #################################   */
+
+#img-container-All {
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	padding: 80px 0;
+}
+.imagesContAll{
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.img-container{
+
+    margin-left: 8px;
+    overflow: hidden;
+    position: relative;
+}
+.img-container img{
+  
+    width: 100%;
+    height: auto;
+}
+.imghovertxt:hover {
+    top: 0%;
+}
+.img-content{
+    display: flex;
+    padding-bottom: 30px;
+
+}
+.img-content p{
+ 
+    color: #fff;
+    font-size: 16px;
+    padding-left: 20px;
+    font-weight: 900;
+}
+.img-content h1{
+    color: #fff;
+    font-size: 30px;
+    line-height: .7333333333;
+}
+.imghovertxt{
+    padding: 20px 20px 0px 20px;
+    background: rgba(66,114,215,.9);
+    position: absolute;
+    bottom: 0%;
+    top: 78%;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+.iconAllTxt1 p{
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    line-height: 23px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    transition: all 0.5s;
+}
+.iconAllTxt1 h2{
+    color: #fff;
+}
+
+.iconAllDesign h3{
+    font-size: 16px;
+}
+/* ############################## bemaxItems Design ########################  */
+.all-services {
+    padding-top: 80px;
+}
+.bemaxItems{
+    background: #f0f0f0;
+    padding-bottom: 75px;
+}
+
+.icon-service i{
+    width: 50px;
+    height: 50px;
+    background: #4272d7;
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+
+.service-txt a{
+
+    color: #555;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    text-decoration: none;
+
+}
+.service-txt p {
+    font-size: 15px;
+    line-height: 1.66;
+    padding-top: 20px;
+    color: #666;
+}
+.single-service {
+    display: flex;
+    margin-bottom: 40px;
+}
+.service-txt {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+/* ############################### latest Project Design ############################## */
+
+.latestProject{
+   padding: 70px  0px 80px 0px;
+    background: #222222;
+  
+}
+.bemaxHeader1 h1{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.project-wrap {
+    position: relative;
+}
+.project-txt {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0%;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-out;
+}
+.project-wrap:hover .project-txt{
+    opacity: 1;
+    visibility: visible;
+}
+.project-wrap:hover .project-img::before{
+    opacity: 1;
+}
+.project-txt a{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.project-txt span{
+    color: #ccc;
+    font-size: 13px;
+}
+
+.project-img{
+    position: relative;
+}
+.project-img img{
+    height: auto;
+    width: 100%;
+}
+.project-img::before{
+    background: rgba(66,114,215,.9);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transition: all 0.4s ease-in;
+    opacity: 0;
+}
+
+.latestProject-active{
+    padding-top: 30px;
+}
+
+
+/* ################################ Choose Us Design ######################### */
+
+
+
+.vedio-us{
+    position: relative;
+}
+
+.vedio-us a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 55px;
+    height: 55px;
+    font-size: 50px;
+    color: #fff;
+}
+
+.vedio-us img{
+    width: 100%;
+    height: auto;
+
+}
+
+.chose-list {
+	margin-bottom: 30px;
+	padding-left: 25px;
+}
+.chose-list p{
+
+    font-size: 15px;
+    line-height: 1.6666;
+}
+.chose-title{
+    margin-bottom: 20px;
+}
+.chose-title i{
+    color: #555;
+    display: inline-block;
+    font-size: 18px;
+}
+.chose-title h3{
+    display: inline-block;
+    padding-left: 17px;
+    font-size: 15px;
+    
+}
+.chose-title a{
+  text-decoration: none;
+  color: #555;
+}
+
+
+/* ############################### CTA Design ####################################  */
+
+/* .cta {
+    
+} */
+
+.Working-text {
+	text-align: center;
+	padding-top: 170px;
+	padding-bottom: 170px;
+}
+
+.cta-title h3{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #333333;
+}
+.cta-title p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 30px;
+    color: #555555;
+    padding-bottom: 40px;
+}
+.cta-title a {
+    font-weight: bold;
+    padding: 19px 43px 19px 43px;
+    background: #4272d7;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    display: inline-block;
+}
+
+/* .cta{
+    display: flex;
+
+} */
+/* ################################## Latest Blog Design ###########################  */
+.bemaxHeader2{
+    position: relative;
+}
+.bemaxHeader2 h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #333;
+}
+.underline1{
+    width: 39px;
+    height: 2px;
+    background: #adadad;
+    margin-top: 10px;
+}
+.latestBlog {
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+.blog-wrapper {
+    display: flex;
+    overflow: hidden;
+    padding-top: 30px;
+}
+.blog-img{
+    min-width: 200px;
+    height: 150px;
+    position: relative;
+}
+.blog-img span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #1f2636;
+    width: 100%;
+    color: #fff;
+    font-size: 11px;
+    padding: 6px 11px;
+    text-transform: uppercase;
+   
+}
+.blog-img img{
+   width: 100%;
+   height: 150px;;
+}
+.blog-content1 p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.66;
+    padding-left: 46px;
+    display: inline-block;
+    padding-top: 32px;
+}
+.blog-content1::before {
+    content: '“';
+    font-family: DroidSerif,sans-serif;
+    position: absolute;
+    left: 0px;
+    top: 45px;
+    color: #ccc;
+    font-size: 60px;
+    line-height: 0.366667;
+    font-weight: 700;
+}
+.blog-content {
+    padding-left: 25px;
+
+}
+.blog-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    color: #555;
+}
+.blog-content p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.666;
+  margin-bottom: 25px;
+  
+}
+.meta span{
+    margin-right: 25px;
+}
+.meta span a {
+    color: #555;
+    font-size: 13px;
+    text-decoration: none;
+}
+.meta span a i{
+    color: #ccc;
+}
+.blog-active .owl-nav  button.owl-prev{
+    position: absolute;
+    left: 195px;
+    top: -17%;
+    z-index: 999;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    font-size: 15px;
+    color: #999;
+}
+.blog-active .owl-nav  button.owl-next{
+    position: absolute;
+    left: 230px;
+    top: -17%;
+    z-index: 999;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #aaa;
+    font-size: 15px;
+    color: #999;
+
+}
+
+.profile {
+    padding-left: 44px;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+.testprofilefig img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.profile-content {
+    padding-left: 20px;
+}
+.profile-content a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 700;
+}
+.profile-content p {
+    font-size: 11px;
+    margin-top: 6px;
+}
+/* .blog-content1 p::before{
+    content: '“';
+    font-family: DroidSerif,sans-serif;
+    color: #ccc;
+    font-size: 15px;
+    font-weight: 700;
+} */
+
+
+
+/* ############################## Client Design #####################################  */
+
+.client{
+    padding: 74px 0;
+    background: #f2f2f2;
+}
+.client-active.owl-carousel .owl-item img {
+    display: block;
+    width: inherit;
+}
+
+/* ######################################## Footer Design ##########################  */
+
+
+.footer{
+    padding-top: 80px;
+    background: #171a21; 
+    padding-bottom: 68px;
+    /* position: relative; */
+}
+
+.footer-all p {
+    font-size: 13px;
+    line-height: 1.6923076923;
+    color: #999;
+    margin-bottom: 23px;
+    padding-top: 34px;
+    padding-right: 20px;
+}
+.social-media a {
+    background-color: rgba(66,114,215,.1);
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    height: 35px;
+    margin-right: 10px;
+    width: 35px;
+    text-align: center;
+    line-height: 2.5;
+    transition: all .4s ease-in-out;
+}
+.social-media a:hover{
+    background: #4272d7;
+}
+
+.list-style li:before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255,255,255,.2);
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.footerHeading h1 {
+    font-size: 16px;
+    line-height: 1.66;
+    padding-top: 10px;
+    padding-bottom: 28px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.featuresList ul a {
+    font-size: 13px;
+    line-height: 2.692308;
+    color: #ccc;
+    text-decoration: none;
+    list-style: none;
+}
+.featuresList ul a:hover{
+    color: rgb(243, 243, 243);
+}
+.contactTxt p , .footerContent p{
+    font-size: 13px;
+    line-height: 1.6923076923;
+    color: #999;
+    margin-bottom: 11px;
+}
+
+.list-style li:before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255,255,255,.2);
+    display: inline-block;
+    margin-right: 8px;
+}
+.footerForm{
+    height: 40px;
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+}
+.footerForm input[type=text] {
+    width: 66.2962962963%;
+    padding: 0 15px;
+    background-color: rgba(255,255,255,.1);
+    color: #ccc;
+    font-size: 15px;
+    border: none;
+    line-height: 1.8666666667;
+}
+.footerForm input[type=submit] {
+
+   border: none;
+    font-size: 15px;
+    color: #fff;
+    padding: 12px;
+    background-color: #507bd6;
+}
+.footerForm input[type=submit]:hover {
+    background: #eee;
+    color: #507bd6;
+    transition: .5s ease-out;
+ 
+}
+
+.footerCopyR{
+    width: 100%;
+     height: 79px;
+     border-top: 1px solid rgba(255,255,255,.05);
+     text-align: center;
+     background: #171a21;
+     
+ }
+ 
+ .footerCopyR p{
+     
+     font-size: 13px;
+     line-height: 5.6923076923;
+     color: #999;
+    
+ 
+ }
